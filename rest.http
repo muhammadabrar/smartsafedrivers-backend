@@ -1,0 +1,13 @@
+
+POST http://localhost:5000/api/queries HTTP/1.1
+content-type: application/json
+
+{
+   
+     "subject": "test query",
+    "msg": "msg query",
+
+    "name": "name of sender",
+    "phone": "0344444444",
+    "date":"now"
+}
