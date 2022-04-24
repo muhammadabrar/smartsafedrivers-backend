@@ -1,14 +1,15 @@
 
 const mongoose = require('mongoose');
 // let Exercise = require('./models/model');
-
+const serverless = require("serverless-http");
 
 
 const express = require('express');
 const app = express();
 const router = express.Router();
 const bodyParser = require('body-parser');
-
+module.exports = app;
+module.exports.handler = serverless(app);
 var cors = require('cors');
 // app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
 app.use(cors())

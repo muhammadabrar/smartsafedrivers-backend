@@ -4,8 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "node index.js"
-    
+    "start": "NODE_ENV=development ./node_modules/.bin/netlify-lambda serve src",
+    "build": "NODE_ENV=production ./node_modules/.bin/netlify-lambda build src"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +17,7 @@
     "express": "^4.16.4",
     "mongoose": "^5.5.7",
     "multer": "^1.4.4",
+    "serverless-http": "^3.0.1",
     "twilio": "^3.76.0"
   },
   "devDependencies": {
